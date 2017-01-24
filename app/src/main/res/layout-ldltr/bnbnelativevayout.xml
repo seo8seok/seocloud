@@ -7,8 +7,8 @@
         android:id="@+id/hello_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
         android:background="#38cd0f"
         android:text="Hello"
         android:textSize="32sp" />
@@ -17,23 +17,19 @@
         android:id="@+id/left_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="왼쪽"
-        android:textSize="32sp"
+        android:layout_toLeftOf="@id/suwon_text"
         android:background="#5c0c0c"
-        android:layout_toLeftOf= "@id/suwon_text"
+        android:text="왼쪽"
+        android:textSize="32sp" />
 
-        />
     <TextView
         android:id="@+id/light_text_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="오른쪽"
-        android:textSize="32sp"
-        android:background="#5c0c0c"
         android:layout_toEndOf="@id/suwon_text"
-
-        />
-
+        android:background="#5c0c0c"
+        android:text="오른쪽"
+        android:textSize="32sp" />
 
     <TextView
         android:id="@+id/suwon_text"
@@ -43,49 +39,50 @@
         android:background="#a2ab30"
         android:text="수원스마트"
         android:textSize="32sp" />
+
     <TextView
         android:id="@+id/light2_text_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="오른쪽"
-        android:textSize="32sp"
-        android:background="#5c0c0c"
-        android:layout_toEndOf="@id/wonjang_text"
         android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/wonjang_text"
+        android:background="#5c0c0c"
+        android:text="오른쪽"
+        android:textSize="32sp" />
 
-        />
-    <TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:textSize="32sp"
-    android:text="왼쪽"
-    android:layout_above="@id/wonjang_text"
-    android:background="#ce2121"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="32sp"
+        android:layout_above="@id/wonjang_text"
+        android:background="#ce2121"
         android:text="왼쪽"
+        android:textSize="32sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_above="@id/hello_text"
         android:layout_alignParentEnd="true"
-        android:background="#ce2121"/>
+        android:background="#ce2121"
+        android:text="왼쪽"
+        android:textSize="32sp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="32sp"
-        android:text="잉"
-        android:layout_toStartOf="@id/hello_text"
         android:layout_alignParentBottom="true"
-        android:background="#ce2121"/>
+        android:layout_toStartOf="@id/hello_text"
+        android:background="#ce2121"
+        android:text="잉"
+        android:textSize="32sp" />
 
     <TextView
         android:id="@+id/wonjang_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:background="#9430ab"
         android:text="오준석 원장"
-
-        android:textSize="32sp"
-        android:layout_alignParentBottom="true"/>
+        android:textSize="32sp" />
 
 </RelativeLayout>

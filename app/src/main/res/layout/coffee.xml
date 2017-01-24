@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+    <TextView
+        android:id="@+id/QUANTITY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QUANTITY"
+        android:padding="15dp"/>
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="-"
+        android:layout_below="@id/QUANTITY"
+        android:layout_marginLeft="10dp"
+
+        />
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:layout_below="@id/QUANTITY"
+        android:layout_toEndOf="@id/zero"
+
+
+        />
+    <TextView
+        android:id="@+id/story"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total :15$\nThanks you "
+        android:layout_below="@id/PRICE"
+        android:paddingTop="15dp"
+        android:paddingLeft="15dp"
+        />
+        <TextView
+            android:id="@+id/PRICE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRICE"
+            android:layout_below="@+id/minus"
+            android:paddingTop="15dp"
+            android:paddingLeft="15dp"/>
+
+
+    <TextView
+        android:id="@+id/zero"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_below="@id/QUANTITY"
+        android:layout_toEndOf="@id/minus"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="8dp"
+        android:layout_alignBaseline="@id/minus"
+
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ORDER"
+        android:layout_below="@id/story"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        />
+
+
+
+
+</RelativeLayout>
