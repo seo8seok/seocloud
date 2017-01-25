@@ -31,11 +31,13 @@
             >
 
             <TextView
+                android:id="@+id/TeamA"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Team A" />
 
             <TextView
+                android:id="@+id/ScoreA"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0"
@@ -43,6 +45,7 @@
                 android:layout_marginTop="20dp"/>
 
             <Button
+                android:id="@+id/Point3A"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="+3Point"
@@ -50,6 +53,7 @@
                 android:layout_marginTop="20dp"/>
 
             <Button
+                android:id="@+id/Point2A"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="+2Point"
@@ -57,6 +61,7 @@
                 android:layout_marginTop="20dp"/>
 
             <Button
+                android:id="@+id/FreePointA"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Free throw"
@@ -75,12 +80,14 @@
             >
 
             <TextView
+                android:id="@+id/TeamB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Team B"
                 android:layout_gravity=""/>
 
             <TextView
+                android:id="@+id/ScoreB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0"
@@ -88,13 +95,16 @@
                 android:layout_marginTop="20dp"/>
 
             <Button
+                android:id="@+id/Point3B"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="+3point"
                 android:background="#de6706"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginTop="20dp"
+                />
 
             <Button
+                android:id="@+id/Point2B"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="+2point"
@@ -102,6 +112,7 @@
                 android:layout_marginTop="20dp"/>
 
             <Button
+                android:id="@+id/FreePointB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="free throw"
@@ -117,6 +128,7 @@
         android:layout_gravity="center">
 
         <Button
+            android:id="@+id/Reset"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="reset"
