@@ -11,9 +11,11 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private static final String TAG = MainActivity.class.getSimpleName();
+    public static final int QUANTITY_MIN = 0;
     private Button mMinusButton;
     private Button mPlusButton;
     private TextView mQuantityTextView;
+    private Button mOrderButton;
 //수량
     private int mQuantity;
 
@@ -28,12 +30,41 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mMinusButton = (Button) findViewById(R.id.minus);
         mPlusButton= (Button) findViewById(R.id.plus);
         mQuantityTextView= (TextView) findViewById(R.id.quantity);
+
         //수량
 
 
         mMinusButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                mQuantity--;
+
+                mQuantityTextView.setText(""+ mMinusButton); //<<숫자을 문자열로 만들어라
+
+
+                //debug
+                Log.d(TAG, "click");
+                //verbose
+                Log.v(TAG, "일반로그");
+                Log.i(TAG, "정보로그");
+                Log.e(TAG, "에러로그");
+
+                Log.w(TAG, "경고로그");
+                //토스트 메세지 화면에 매세지띄어 주는메서듴ㅋ
+                Toast.makeText(MainActivity.this, "얼레이꼴래리", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        mPlusButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mQuantity++;
+                if(mQuantity> QUANTITY_MIN){
+                    mQuantity=QUANTITY_MIN;
+                }
+                mQuantityTextView.setText(""+ mMinusButton); //<<숫자을 문자열로 만들어라
+
+
                 //debug
                 Log.d(TAG, "click");
                 //verbose
@@ -48,13 +79,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });
 
 
-
-
-
-
-
-//        Button button = (Button) findViewById(R.id.btn);
-//        button.setOnClickListener(this);
     }
 
     private void init() {
