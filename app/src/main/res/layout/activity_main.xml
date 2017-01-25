@@ -48,7 +48,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:visibility="gone" />
-    //속성 닫기
+    <!-- 속성 닫기-->
 
 
 </LinearLayout>
